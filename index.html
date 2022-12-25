@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1>TICKET BOOKING FORM</h1>
+<form>
+    <div>
+        <label>
+            NAME:
+        </label>
+        <br>
+        <input type="text">
+    </div>
+       <div>
+        <label>
+            AGE:
+        </label>
+        <br>
+        <input type="text" id="age">
+    </div>
+       <div>
+        <label>
+            Sex:
+        </label>
+        <br>
+        <input type="radio" name="rad" id="radio1" >
+        <label>Male</label>
+        <br>
+        <input type="radio" name="rad" id="radio2">
+          <label>female</label>
+        <br>
+        <input type="radio" name="rad">
+          <label>other</label>
+        <br>
+    </div>
+    </div>
+       <div>
+        <label>
+            ENTER THE SOURCE CITY
+        </label>
+        <br>
+        <input type="text">
+    </div>
+    </div>
+       <div>
+        <label>
+            destination
+        </label>
+        <br>
+        <input type="text">
+    </div>
+    <div>
+        <label>
+        enter the number of tickets
+        </label>
+        <br>
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option >3</option>
+            <option>4</option>
+        </select>
+    </div>
+    <input type="submit">
+</form>
+<script>
+    function check()
+    {
+        let x=parseInt(document.getElementById("age").value);
+        if(x<25)
+        {
+            alert("INVALID AGE");
+        }
+        else if(document.getElementById("radio1").checked==true)
+        {
+            alert("MR ")
+        }
+    }
+</script>
+</body>
+</html>
